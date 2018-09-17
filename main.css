@@ -37,7 +37,7 @@
         -webkit-transition:  background-color 0.7s;
         transition: background-color 0.7s;
         transition-timing-function: ease;
-        width:60px;
+        width:200px;
         display: block;
         color: white;
         padding: 14px 20px; 
