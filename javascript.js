@@ -49,7 +49,25 @@ switch(Math.round(cijfer)){
     case 10:
         console.log("uitmuntend");
         break;
-    
 }
+// opdarcht 3
+purchasedbook= true;
+job = "teacher";
+intrain = false;
+
+if(purchasedbook == true && job == "teacher" && intrain== true){
+console.log("finally i can enjoy my book")
+}
+else if(purchasedbook == true && intrain == true || job=="teacher"){
+    console.log("don't need to be a teacher to read a book")
+}
+else if(purchasedbook== false){
+    console.log("can't read a book when you dont have one ")
+}
+else if(intrain==true){
+    console.log("time to relax")
+}
+
+
 
 
