@@ -60,7 +60,7 @@ intrain = false;
 if (purchasedbook == true && job == "teacher" && intrain == true) {
     console.log("finally i can enjoy my book")
 }
-else if (purchasedbook == true && intrain == true || job == "teacher") {
+else if (purchasedbook == true && intrain == true) {
     console.log("don't need to be a teacher to read a book")
 }
 else if (purchasedbook == false) {
