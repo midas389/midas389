@@ -147,3 +147,45 @@ console.log(x+y)
 var x;
 var y;
 
+
+//opdarachten arrays
+//opdracht 1
+console.log("opdarcht 1")
+function randomInt(min, max) {
+    return Math.floor(Math.random() * (max - min)) + min;
+}
+
+const lapRounds = [2.99,  3.00, 3.01, 4.01, 2.79, 2.88, 3.10, 4.12]; 
+function random(){
+
+    for(i=0;i<3;i++){
+        console.log(lapRounds[randomInt(0,lapRounds.length)])      
+    }
+}
+random();
+
+//opdracht 2
+console.log("opdarcht 2")
+const allMyRecords = [
+    ["The Who - Pinball Wizard", "Rolling Stones - Exile on main street", "Police - Message in a bottle"],
+    ["De Dijk - Alle 40 Goed", "Het Goede Doel - Belgie", "Doe Maar - skunk"]
+ ];
+function getAllMyRecords(){
+ for(i=0;i<3;i++){
+    console.log(allMyRecords[0][i])
+ }
+ for(i=0;i<3;i++){
+    console.log(allMyRecords[1][i])
+ }
+}
+getAllMyRecords();
+
+//opdarcht3
+console.log("opdaracht 3")
+function lapRoundsCheck(laptimes){
+    return laptimes < 4
+}
+console.log(lapRounds.filter(lapRoundsCheck))
+// het gebruik van .filter is korter en simpeler dan de for loop
+
+
