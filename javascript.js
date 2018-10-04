@@ -189,3 +189,54 @@ console.log(lapRounds.filter(lapRoundsCheck))
 // het gebruik van .filter is korter en simpeler dan de for loop
 
 
+//opdarchten objects
+//opdarcht 1
+console.log("opdarcht 1")
+const lapTimes = [55.99,  63.00, 63.01, 54.01, 62.79, 52.88, 53.10, 54.12]; 
+var JSONlapTimes= JSON.stringify(lapTimes);
+console.log(JSONlapTimes) 
+
+
+//opdarcht 2
+console.log("opdracht 2")
+const teachers = [
+    {
+        name: "Loek",
+        profession: "Teacher",
+        brand: "Linux",
+        hoursPerWeek:40, 
+        salary: 2000,
+        salaryPerHour: function(){return this.salary }      
+    },
+    {
+        name: "Daan",
+        profession: "Teacher",
+        brand: "Arduino",
+        hoursPerWeek:35, 
+        salary: 2500   
+    },
+    {
+        name: "Rimmert",
+        profession: "Teacher",
+        brand: "Apple",
+        hoursPerWeek:37, 
+        salary: 3000   
+    }
+];
+
+console.log(teachers[0].salaryPerHour)
+
+for(i=0;i<3;i++){
+    console.log( "I have a " ,teachers[i].profession,"named ",teachers[i].name, "and he likes to work on a ",teachers[i].brand," computer");
+}
+
+
+//opdracht 3
+console.log("opdracht 3")
+
+
+
+
+
+
+
