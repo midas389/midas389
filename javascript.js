@@ -72,4 +72,78 @@ else if (intrain == true) {
 
 
 
+// loops opdrachten
+console.log("loops opdrachten")
+//opdracht 1
+console.log("opdracht",1)
+
+let i =0;
+var array=[1,4,6,8,12,20];
+while(i<array.length){
+let math = array[i] / 4;
+if(Number.isInteger(math)==true){
+    console.log(array[i],'is deelbaar door 4')
+}
+i++;
+}
+
+//opdracht 2
+console.log("opdracht",2)
+var fibo= [1,1];
+var volgendefibo ="";
+i =1;
+while(i<10){
+volgendefibo = fibo[i] + fibo[i-1];
+fibo[i+1]= volgendefibo;
+i++;
+}
+console.log(fibo)
+
+//opdracht 3
+console.log("opdracht",3)
+array=[2, 4, 8, 9, 12, 13];
+var sumarray=0;
+for(i=0;i<array.length;i++){
+ sumarray= sumarray + array[i];
+}
+console.log(sumarray)
+
+
+
+//opdrachten funties
+console.log("opdracht funties")
+//opdracht 1
+console.log("opdracht",1)
+function Fibonacci(x){
+var fibo= [1,1];
+var volgendefibo ="";
+i =1;
+while(i<x){
+volgendefibo = fibo[i] + fibo[i-1];
+fibo[i+1]= volgendefibo;
+i++;
+}
+return fibo;
+}
+console.log(Fibonacci(10))
+
+//opdracht 2
+console.log("opdracht",2)
+function countdown(jaartal){
+for(i=0;i<10;i++){
+    console.log(10-i)
+}
+if(i == 10){
+    console.log("happy new",jaartal)
+}
+}
+countdown(2090);
+
+//opdarcht 3
+console.log("opdracht",3)
+x=5;
+y=6;
+console.log(x+y)
+var x;
+var y;
 
