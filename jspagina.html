@@ -1,27 +1,55 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>website 1</title>
-    <link rel="stylesheet" type="text/css" href="main.css"/>
-    <script src="javascript.js"></script>
+    <title>website 1</title>
+    <link rel="stylesheet" type="text/css" href="main.css" />
+
 
 </head>
+
 <body>
-  <div><a href="https://hz.nl/"><img class="hzicon" src="foto's/hzlogo.png"></a></div>   
-       <ul class="ulnav">
-            <li class="linav"><a href="index.html">Home</a></li>
-            <li class="linav"><a href="midas.html">Midas</a></li>
-            <li class="linav"><a href="dashboard.html">Dashboard</a></li>
-            <li class="linav"><a href="motivatie.html">Mijn motivatie</a></li> 
-            <li class="linav"><a  class="active" href="jspagina.html">Javascript</a></li>
-          </ul>
-        
-<div class="layout">
+    <div><a href="https://hz.nl/"><img class="hzicon" src="foto's/hzlogo.png"></a></div>
+    <ul class="ulnav">
+        <li class="linav"><a href="index.html">Home</a></li>
+        <li class="linav"><a href="midas.html">Midas</a></li>
+        <li class="linav"><a href="dashboard.html">Dashboard</a></li>
+        <li class="linav"><a href="motivatie.html">Mijn motivatie</a></li>
+        <li class="linav"><a class="active" href="jspagina.html">Javascript</a></li>
+    </ul>
+
+    <div class="layout">
 
 
 
 
-</div>
+        <div id="puzzelProbeer">
+            <button id="button3" onclick="checkPosition(3)">3</button>
+            <button id="button4" onclick="checkPosition(4)">4</button>
+            <button id="button1" onclick="checkPosition(1)">1</button>
+            <button id="button2" onclick="checkPosition(2)">2</button>
+            <br>
+        </div>
+        <div id="puzzelAf" style="display: none;">
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>4</button>
+            
+        </div>
+        <div>
+            <p id="finish"></p>
+            <p id="counter">je hebt nog 5 pogingen</p>
+        </div>
+
+
+
+
+
+
+
+    </div>
+    <script src="jspagina2.js"></script>
 </body>
-</html>
 
+</html>

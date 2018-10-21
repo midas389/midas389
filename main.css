@@ -118,6 +118,11 @@
     color :rgb(0, 0, 0);
 }
 
+button{
+    width:100px;
+    height:100px;
+}
+
 
 
 
