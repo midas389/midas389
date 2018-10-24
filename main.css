@@ -51,6 +51,7 @@
 
    .imgzv{
       height:250px;
+      border-radius: 25px; 
  
    }
 
@@ -67,11 +68,15 @@
        background-color: rgb(61, 61, 61)
    }
 
-   #snapchat{
+   #snapchat,#snapchat0, #snapchat1, #snapchat2, #snapchat3, #snapchat4{
        height: 200px;
        float:left;
        border-radius: 25px;       
    }
+
+  
+   
+   
 
    .dasboard{
      overflow:auto;  

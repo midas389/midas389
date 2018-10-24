@@ -1,33 +1,36 @@
-var check = 1;
-function checkPosition(x){
-    var button = document.getElementById("button"+x);
-    if(count == 0){
-        document.getElementById("counter").innerText = "Helaas je pogingen zijn op";
-        return 
+
+var imgOrder = [3,0,1,2];
+function createImg(){
+    document.getElementById("puzzelProbeer").addEventListener('click',clickHandler)
+    for(i=0;i<4;i++){
+    var img = document.createElement("img");
+    img.src= "foto's/Snapchat.jpg";
+    img.id= imgOrder[i];
+    img.style = "height: 200px; border-radius: 25px; "
+    document.getElementById("puzzelProbeer").appendChild(img);
+    document.getElementById('counter').innetText= "je hebt nog "+pogingen+" over";
     }
-    if(x == check){
-        button.style= "border: 4px solid green";
-        check++;
-        if(check == 5){
-            finish();
+
+}
+createImg();
+
+var pogingen = 5;
+var currentImg = 0;
+function clickHandler(){
+    if(event.target.id == currentImg){
+        currentImg++;
+        document.getElementById(event.target.id).style = " height: 200px; border-radius: 25px; border: 10px solid green;";
+        if(currentImg == 4){
+            document.getElementById('counter').innerText="JE HEBT GEWONNEN!!";
+            document.getElementById('puzzelProbeer').removeEventListener("click",clickHandler);
         }
     }
-    else{
-        counter();
+    else if(event.target.id !== currentImg){
+        pogingen--;
+        document.getElementById('counter').innerText = "je hebt nog "+pogingen+" over";
+        if(pogingen == 0){
+            document.getElementById('counter').innerText = "JE HEBT VERLOREN!!";
+            document.getElementById('puzzelProbeer').removeEventListener("click",clickHandler);
+        }
     }
-}
-
-var count = 5;
-function counter(){
-    count -= 1;
-    document.getElementById("counter").innerText = "je hebt nog "+count+" pogingen";
-    if(count == 0){
-        checkPosition();
-    }
-}
-
-function finish(){
-    document.getElementById("counter").innerText = "GOED GEDAAN!!";
-    document.getElementById("puzzelProbeer").style ="display: none;"
-    document.getElementById("puzzelAf").style ="display: inline;"
 }
